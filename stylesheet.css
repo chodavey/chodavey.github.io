@@ -1,5 +1,14 @@
 body {
-    font-family: "JetBrains Mono", monospace;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
     background-color: #f9f9f9;
-    color: #333;
+    color: #1b1b1b;
+    line-height: 1.6;
+}
+
+.masthead {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 1.25rem;
+    border-bottom: 2px solid #1b1b1b;
 }

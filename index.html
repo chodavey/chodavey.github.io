@@ -16,6 +16,14 @@
     <header class="masthead">
         <h1 class="nameplate">The Uni Chronicles</h1>
         <p id="today" class="tagline"></p>
+        <script>
+            document.getElementById("today").textContent =
+                new Date().toLocaleDateString("en-US", {
+                    month: "long",
+                    day: "numeric",
+                    year: "numeric"
+                });
+        </script>
     </header>
 </body>
 

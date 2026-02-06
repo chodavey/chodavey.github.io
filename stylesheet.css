@@ -6,12 +6,6 @@ body {
     line-height: 1.6;
 }
 
-.content {
-    flex: 1;
-    /* takes remaining space */
-    padding: 2rem;
-}
-
 .headline {
     margin: 0.25rem 0 0.6rem;
 }

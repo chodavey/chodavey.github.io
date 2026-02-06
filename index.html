@@ -14,7 +14,8 @@
 
 <body>
     <header class="masthead">
-        <h1 class="nameplate">The Uni Chronicles</h1>
+        <h1 id="home" class="nameplate">The Uni Chronicles</h1>
+        <!-- id applied to element 'today' -->
         <p id="today" class="tagline"></p>
         <script>
             document.getElementById("today").textContent =
@@ -27,7 +28,7 @@
         <!-- <a> to link to another website -->
         <p class="muted">
             Support feline health research: <a class="out-link" href="https://everycat.org/" target="_blank"
-                rel="noopener noreferrer">cats</a>.
+                rel="noopener noreferrer">Every Cat Health Foundation</a>.
         </p>
     </header>
 </body>
@@ -35,12 +36,12 @@
 <!-- <div> to create at least 2 sections -->
 <div class="layout">
     <nav class="sidebar">
-        <a href="#">Home</a>
-        <a href="#">Issue #01</a>
+        <a href="#home">Home</a>
+        <a href="#issue-01">Issue #01</a>
     </nav>
 
     <main class="page">
-        <h2 class="headline">Issue #01 - Februrary 5, 2026</h2>
+        <h2 id="issue-01"> class="headline">Issue #01 - Februrary 5, 2026</h2>
         <p class="lead">
             Humble Beginnings - How Uni Got to Where He Is Today
         </p>

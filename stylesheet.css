@@ -6,8 +6,19 @@ body {
     line-height: 1.6;
 }
 
+.content {
+    flex: 1;
+    /* takes remaining space */
+    padding: 2rem;
+}
+
 .headline {
     margin: 0.25rem 0 0.6rem;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
 }
 
 .kicker {
@@ -32,6 +43,12 @@ body {
     margin: 0;
     font-size: 2.6rem;
     line-height: 1.1;
+}
+
+.sidebar {
+    width: 220px;
+    padding: 1rem;
+    background: #f4f4f4;
 }
 
 .tagline {

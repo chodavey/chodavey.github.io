@@ -7,28 +7,34 @@ a {
 a:hover {
     color: #FF4545;
     /* hover color change */
-    text-decoration: none;
+}
+
+.article p {
+    text-indent: 2em;
+}
+
+.article p:first-of-type {
+    text-indent: 0;
 }
 
 body {
     margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Inter";
     background-color: #f9f9f9;
     color: #1b1b1b;
     line-height: 1.6;
 }
 
 .headline {
-    margin: 0.25rem 0 0.6rem;
+    margin: 0.25rem 0;
 }
 
 .issue {
     padding: 0.75rem 0;
-    border-top: 1px solid #1b1b1b;
 }
 
-.issue-title {
-    margin: 0;
+.issue-date {
+    margin: 0.25rem 0 0.6rem;
 }
 
 .layout {
@@ -36,21 +42,24 @@ body {
     min-height: 100vh;
 }
 
-.kicker {
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    margin: 0 0 0.4rem;
+.masthead {
+    border-bottom: 2px solid #1b1b1b;
 }
 
-.masthead {
-    font-family: "Libre Caslon Display", serif;
+.masthead-inner {
     max-width: 980px;
+    /*box model properties*/
     margin: 0 auto;
-    /*box model property*/
-    padding: 2rem 1.25rem 1.25rem;
-    /*box model property*/
-    border-bottom: 2px solid #1b1b1b;
+    padding: clamp(1 rem, 4vw, 2.5rem);
+}
+
+.meta-line {
+    display: flex;
+    align-items: center;
+}
+
+.spacer {
+    flex: 1;
 }
 
 /* Class to be used twice */
@@ -59,18 +68,38 @@ body {
 }
 
 .nameplate {
-    margin: 0;
-    font-size: 2.6rem;
-    line-height: 1.1;
+    font-family: 'Mozilla Headline';
+    font-size: 3rem;
+    letter-spacing: -0.01em;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.photo {
-    margin: 1rem 0;
+.page {
+    margin: .5rem 0 2rem;
+    max-width: 70%;
+    padding: 0 clamp(1rem, 4vw, 2rem);
+    font-family: 'Inter';
+    background-color: #f9f9f9;
+    color: #1b1b1b;
+    line-height: 1.6;
+}
+
+.photo-card {
+    padding: 6px;
+    max-width: 35%;
+    margin: 0 auto;
+}
+
+.photo-img {
+    max-width: 100%;
+    height: auto;
 }
 
 .sidebar {
-    width: 220px;
-    padding: 1rem;
+    width: 240px;
+    padding: clamp(0.75rem, 2.5vw, 1.5rem);
+    border-right: 2px solid #1b1b1b;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;

@@ -8,15 +8,27 @@
         content="The Uni Chronicles is a single-page newsletter about my pet cat Uni with updates to what goes on in his life" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Uni Chronicles</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Mozilla+Headline&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<body>
-    <header class="masthead">
+
+<header class="masthead">
+    <div class="masthead-inner">
         <h1 id="home" class="nameplate">The Uni Chronicles</h1>
         <!-- id applied to element 'today' -->
-        <p id="today" class="tagline"></p>
+        <div class="meta-line">
+            <span class="tagline" id="today"></span>
+            <span class="spacer"></span>
+            <span class="tagline">
+                Support feline health research:
+                <!-- <a> to link to another website -->
+                <a href="https://everycat.org/" class="tooltip" target="_blank" rel="noopener noreferrer">
+                    Every Cat Health Foundation
+                </a>
+            </span>
+        </div>
+
         <script>
             document.getElementById("today").textContent =
                 new Date().toLocaleDateString("en-US", {
@@ -25,34 +37,64 @@
                     year: "numeric"
                 });
         </script>
-        <!-- <a> to link to another website -->
-        <p class="muted">
-            Support feline health research: <a class="out-link" href="https://everycat.org/" target="_blank"
-                rel="noopener noreferrer">Every Cat Health Foundation</a>.
-        </p>
-    </header>
-</body>
+    </div>
+</header>
+
 
 <!-- <div> to create at least 2 sections -->
 <div class="layout">
     <nav class="sidebar">
         <a href="#home">Home</a>
-        <a href="#issue-01">Issue #01</a>
+        <a href="#issue-01">Issue #01 - Humble Beginnings</a>
     </nav>
 
     <main class="page">
-        <h2 id="issue-01" class="headline">Issue #01 - Februrary 5, 2026</h2>
-        <article class="issue">
-            <h3 class="issue-title">Humble Beginnings - How Uni Got to Where He Is Today</h3>
+        <h2 id="issue-01" class="headline">Issue #01 - Humble Beginnings</h2>
+        <article class="issue-title">
+            <h3 class="issue-date">Februrary 5, 2026</h3>
             <!-- Include an image -->
-            <figure class="photo">
-                <img src="uni_pictures/uni_first_day.jpg" alt="Uni's first day with his owner" />
+            <figure class="photo-card">
+                <img class="photo-img" src="uni_pictures/introducing_uni.jpg" alt="Introducing Uni" />
                 <figcaption class="muted">
-                    Uni's first day with his owner
+                    Introducing Uni
                 </figcaption>
             </figure>
-            <p class="muted">Words.</p>
-        </article>
+            <article class="article">
+                <p>
+                    Uni fell gracefully (or perhaps not so gracefully) into into my hands on the fateful day of November
+                    5th, 2022.
+                    At the time Uni was already 2 months and 13 days (74 days) old. His birthday is on August 23rd,
+                    2022, and as I write on about
+                    him in his very first issue, I realized he's well on his way to becoming 4 in 6 more months. Time
+                    flies like crazy.
+                </p>
+
+                <p>
+                    The way I got Uni is a bit unique. I got him through a friend of a friend who already had an older
+                    cat,
+                    but that older cat wasn't getting along with Uni - so much so that it had come to the point in which
+                    he was
+                    asking around to see if anyone wanted to adopt from him. I recall getting a message from my friend
+                    about him in the afternoon.
+                    I was stopped at a traffic light with no intention of getting a pet at the time, but when I read her
+                    message, I
+                    don't really know what went through my mind. I think I was at a turning point in my life. I just
+                    decided to bite the bullet and try something
+                    I've never done before. I accepted
+                    to adopt Uni; I didn't really even question it. The act was a bit unspeakable, just because I've
+                    never really made such a significant decision so quickly. I didn't know if I was even allergic to
+                    cats. Just an hour or two after the message, Uni was in my hands. Everyone who knew me was taken by
+                    surprise when they heard the news. One day I suddenly became a cat owner.
+                </p>
+
+                <p>
+                    Now it just feels like Uni was always meant to be a part of my family. Every morning, he will wake
+                    me up for food. There have been days when if it wasn't for him, I would've been late for work
+                    because I would've
+                    stayed asleep. In that sense, one could say we need each other. I would like to write more about
+                    him, but I think I'll need to stop here in the interest of time.
+                </p>
+            </article>
     </main>
 </div>
 

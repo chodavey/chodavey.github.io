@@ -1,12 +1,11 @@
-/* style <a> hover color */
 a {
     color: #1b1b1b;
     text-decoration-thickness: 2px;
 }
 
+/* style <a> hover color */
 a:hover {
     color: #FF4545;
-    /* hover color change */
 }
 
 .article p {
